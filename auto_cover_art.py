@@ -16,6 +16,7 @@ from mutagen import File as MutagenFile
 from mutagen.id3 import ID3, APIC
 from mutagen.flac import FLAC, Picture
 from mutagen.mp4 import MP4, MP4Cover
+import time
 
 # Configure logging
 logging.basicConfig(
@@ -57,6 +58,7 @@ def run_fpcalc(filepath):
 
 def lookup_acoustid(fingerprint, duration):
     """Look up fingerprint in AcoustID database."""
+    time.sleep(1)
     params = {
         'client': ACOUSTID_API_KEY,
         'meta': 'recordings releases',
@@ -80,6 +82,7 @@ def lookup_acoustid(fingerprint, duration):
 
 def get_cover_art_url(release_id):
     """Get cover art URL from Cover Art Archive."""
+    time.sleep(1)
     url = f"{COVERARTARCHIVE_URL}/{release_id}"
     
     try:
