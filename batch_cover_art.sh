@@ -41,7 +41,7 @@ echo -e "Scanning directory: ${YELLOW}$TARGET_DIR${NC}"
 echo ""
 
 # Supported audio file extensions
-EXTENSIONS=("mp3" "m4a" "flac" "ogg" "opus" "wav" "aiff" "aif" "ape" "wv" "tta" "mpc" "mp4" "aac" "wma" "alac")
+EXTENSIONS=("mp3" "m4a" "flac" "ogg" "opus" "aiff" "aif")
 
 # Build find command with all extensions
 FIND_CMD="find \"$TARGET_DIR\" -type f \\( "
