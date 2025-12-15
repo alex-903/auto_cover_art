@@ -1,6 +1,6 @@
 # auto_cover_art
 
-This app is a command-line tool that scans audio files to check for missing album art and automatically retrieves and embeds it into the files. It supports various audio formats and uses tools like FFmpeg and AcoustID for metadata analysis and tagging.
+This app is a command-line tool that scans audio files to check for missing album art and automatically retrieves and embeds it into the files. It relies on the acoustic signature and not on reading any metadata. 
 
 ## Setup
 
